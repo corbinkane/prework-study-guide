@@ -17,36 +17,263 @@
       <section class="card" id="html-section">
         <h2>HTML</h2>
         <ul>
-          <li>Enter html notes here</li>
+          <li>Hypertext Markup Language or HTML is used to create the structure of a webpage</li>
           <li>the head element contains information about the webpage.</li>
           <li>the body element represents the visible content shown to the user</li>
+          <li>HTML is made up of elements which are a type of content on a webpage that provide structure and framework</li>
+          <li>The head element contains information "(metadata)" this inofrmation is not able to be seen by the user and helps the page load correctly </li>
+          <li>The body element contains all of the content that is visible to the user</li>
+          <li>Declarations are not case-sensitive but HTML elements are case-sensitive</li>
+          <li>The declaration we use is < !DOCTYPE  html > this tells the browser what type of document it will be using</li>
+          <li>Attributes define aditional information about an element and HTML  attributes always go in the beginning element never the closing element</li>
+          <li>The title element defines the tile of the webpage it is essential and helps with Search Engine Optimization or SEO which is the process of proving the ranking of a website in search engines</li>
+          <li>The style element defines the CSS styles associated with a website</li> 
+          <li>The base element defines the base URL for a webpage</li>
+          <li>The link element connects an external resource to the HTML document</li>
+          <li>The meta element defines metadata or information such as the character set, description, keywords, author, and viewpoint. For other information stored in the meta tag visit <a href="https://www.w3schools.com/tags/tag_meta.asp">CLICK HERE</a></li>
+          <li>The script element embeds client-side scripts in the HTML document</li>
+          <li>If you want to learn more about UTF-8(variable-length character encoding) and character encoding <a href="https://en.wikipedia.org/wiki/UTF-8">CLICK HERE</a></li>
+          <li>Within the body there are other elements this creates the parent child language with the body being the parent and the other elements being the children</li>
+          <li>The body element is an example of a semantic HTML element which is an element that describes it content and the role it plays on the webpage</li>
+          <li>Visible HTML elements is contained between an opening tag and a closing tag</li>
+          <li>The elements h1, h2, h3, h4, h5, and h6 are headings to help organize a page with h1 being the biggest heading and h6 being the smallest</li>
+          <li>ul, ol, and li are elements that represent unordered lists, ordered lists, and list items</li>
+          <li>the img elements contains information about images on the webpage and contains various attributes the src attribute being the most important because it defines the images location</li>
+          <li>the br element creats a line break between two blocks of content</li>
+          <li>To create a link on a website you use the a element which stands for anchor followed by href = and then the url</li>
+          <li>Here is an example of what your HTML may look like<br>
+            < ! DOCTYPE html><br>
+            < html lang="en"><br>
+              < head><br>
+                < meta charset="UTF-8" /><br>
+                < meta http-equiv="X-UA-Compatible" content="IE=edge" /><br>
+                < meta name="viewport" content="width=device-width, initial-scale=1.0" /><br>
+                < title>Prework Study Guide</ title><br>
+              < / head><br>
+              < body><br>
+                < header id="top"><br>
+                  < h1>Prework Study Guide</ h1><br>
+                  < img<br>
+                    src="./assets/bowtie-cat.png"<br>
+                    alt="Profile image of cat wearing a bow tie." / ><br>
+                < / header ><br>
+                < main><br>
+                  where our code goes<br>
+                < / main><br>
+            
+                < footer><br>
+                  < p> < /p><br>
+                < / footer ><br>
+              < / body ><br>
+            < / html></li>
+
         </ul>
       </section>
 
       <section class="card" id="css-section">
         <h2>CSS</h2>
         <ul>
-          <li>enter CSS notes here</li>
+          <li>There are three types of CSS used to style a webpage inline CSS, internal CSS style sheet, and external CSS style sheet</li>
+          <li>Inline CSS is used to style a particular page element only and are less flexible than internal and external style sheets an example would look like < h1 style = "color : red;" > prework study guide < / h1 ></li>
+          <li>An internal style sheet contains the CSS rules for the webpage in the head element and only apply to that page an example would look like<br>
+          < head ><br>
+          < style ><br>
+          h1 { color : red ; }<br>
+          < / style ><br>
+          < / head ></li>
+          <li>An external style sheet is the most common way because it allows developer to keep all of their CSS rules in a seperate file which makes design changes easier but you do need to use a link placed in the head element like this example<br> < head ><br> < link rel = "stylesheet" href = "./assets/style.css" /><br> < / head ></li>
+          <li>seperation of concerns is a term used to describe the seperation of code into different files based on use</li>
+          <li>in order to add this file you would simply open your terminal to your prework study guide folder navigate to assets and type the command touch style.css then create a new feature branch where you will develop your CSS style sheet</li>
+          <li>Declarations are rules for CSS with two important components the property we want to apply and the value of the property for example (color:blue;)</li>
           <li>A margin indicates how much space we want outside of an element</li>
           <li>A padding indicates how much space we want around the content inside an element</li>
+          <li>Do Not Repeat Yourself or DRY is a principle that encourages the reuse or share pieces of code in order to reduce the number of lines of code that need to be written</li>
+          <li>An example of this would be for styling the header and footer<br>
+            header,<br>
+            footer {<br>
+            width: 100%;<br>
+            height: 120px;<br>
+            background-color: blue;<br> 
+            color: white; } </li>
+          <li>you would style an image similarily but with the tag img instead of header, footer and then followed by dsplay, height, width, margin-left, margin-right</li>
+          <li>To add a list youd use the element < ul > folowing by padding and font-size inside of curly brackets</li>
+          <li>to style the < p > element youd do p { <br>
+            text-align: center;<br>
+            font size; 30px; } </li>
+          <li>To link the CSS to HTML open your project in VS code open the index.html file and in the head section after the final meta element and before the title element add in the CSS link we mentioned earlier < link rel = "stylesheet" href = "./assetslstyle.css" ></li>
+          <li>Class attributes allow us to share a CSS rule to any element we chose by assigning the rule to a class attribute with a class selecter</li>
+          <li>In this activity we use the class sector <b>card</b></li>
+          <li>In VS code in the p element write the following code:
+            <br>
+            .card { <br>
+            width: 88%;<br>
+            margin: 40 px auto;<br> 
+            boder: 5px solid gray;<br>
+            box-shadow: 5px 10px #888888; }</li>
+          <li>the period preceeding card disgnates this as a class selector any HTML element assaigned to the class card will gain tese property assignments from the CSS</li>
+          <li>the first declaration addresses the width of the element at 80% of the available width</li>
+          <li>The margin property assigns 40px to the top and bottom and the auto value to the left and :right</li>
+          <li>The border property assign a border with a 5px that is solid and gray</li>
+          <li>The box-shadow CSS property add a shadow effect around an elemnt's frame. A box shadow is described by x and y offsets relative to the element blur and spread radius, and color in the example x is 5px and defines the eidth or extent on the x axis or right of the box the y offset is 10px and defines the extent on the y axis or below the box</li>
+          <li>Now to save this to git open your command prompt and make sure you are working on the feature branch with git status next type the command git add A- to stage your changes now type git coomit-m "added CSS to project" now to make sure it up to date type git pull origin main than to push and now push the changes by entering git push origin feature/add-css</li>
+          <li>Go to the git hub repository and creat a git pull request remember to be sure that the main is comparing to the current feature branch we just worked on and click creat pull request</li>
+          <li>Now to update the local terminal in the command prompt and type git checkout main to update it and git pull origin to pull the feature branch into the main branch  
         </ul>
       </section>
 
       <section class="card" id="git-section">
         <h2>Git</h2>
         <ul>
-          <li>enter Git notes here</li>
-          <li>git status: checks what branch we are currently on</li>
+          <li>Git hub is a cloud based hosting service that allows to keep track of our projects inside repositories that are stored remotedly which also allows us to collaborate with others
+          <li>Version control systems allow us to track and manage changes to our codebase</li>
+          <li>Every time e save a version of our work using version control it is assigned a unique identifier called an SHA or hash(its usuallu a long string of numbers or letters but developers usually only type the first seven letters or numbers to access a version of their code</li>
+          <li>To revert to a previous code in the command prompt type git revert followed by the SHA</li>
+          <li>Git is a version control system that lets you manage and keep track of each version of your project</li>
+          <li>Git commands always begin with git unlike bash commands and are used to save and track versions of your code</li>
+          <li>This is the <a href= "https://education.github.com/git-cheat-sheet-education.pdf">git cheat sheet</a> that will assist you when first starting</li>
+        <li>Repositories are used as folders to store files that contain code, files that contain other information about code like a README file, and the version history for all the files in the repository</li>
+            <li>this is how you create a git hub repository
+              <br>first log into your github account
+              <br>and click the plus sign nect to your profile icon
+              <br>select new repository from the menu and give it a name such as prework-study-guide(its important to be unique and descriptive for each repo name, use all lowercase letter, use dashes instead of spaces, and be consistent)
+            </li>Add a concise and clear description of the repository
+          <br>Next select it to be public
+         <br>Now select add README . README files are used to pass along useful information to anyone who visits the repository on GitHub
+            <br> now we slect the MIT license for more information on licensing <A href= "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository"> CLICK HERE</a> 
+              <br>Then click the creat repository button on the bottom and finally click code in the top left corner and finally the repository is created</li>
+          <li>we created a README.md the md extension indicates that is is a markdown file</li>
+            <li>Markdown is a lightweight plain text formatting language it is similar to working with a .doc except there is special syntax for fomratting</li>
+          <li>Issues are a task management tool and are loften formatted with Markown</li>
+          <li>to create an issue navigate to the repository we just created nd click on the issues tab, click the new issue button and make a title and desciption for it in the description include the user story and acceptance critera use # and ## for heading one the title and heading two the user story and acceptance critera</li>
+           <li>Now submit the issue  and create as many more as you need</li> 
+          <li>git status: checks what branch we are currently on</li>  
           <li>git checkout -b branch-name(ex. git checkout -b feature/add-html): creates a new branch and switches to it</li>
+          <li>This is how you stage you changes in Git</li>
+          <li>Open your command terminal and type the command git add -A this will commit all files in the working branch</li>
+          <li>Next use git commit -m "brief description" this will make our Git repository up to date with our working directory</li>
+          <li>Use git pull origin main to pull the main branch into the feature branch</li>
+          <li>To push changes into github use git push origin feature/add-html</li>
+          <li>next navigate to the prework-study-guide repository on GitHub then go to your feature branch click the pull request tab and click new pull request make sure you are comparing the main branch to the working branch you wish to upload</li>
+          <li>Then, click crate pull request and then merge the pull request and confirm it this will update your main branch in the GitHub repository</li>
+          <li>to update your local terminal all you have to do is open the terminal and type git checkout main and then the command git pull origin main</li>
         </ul>
       </section>
 
       <section class="card" id="javascript-section">
         <h2>JavaScript</h2>
         <ul>
-          <li>enter JavaScript notes here</li>
+          <li>Useful info on java script can be found here <a href= "https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics"> JavaScript basics</a> and here <a href= "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures"> JavaScript data types</a> </li>
+          <li>This is how you add a JavaScript file to the repo</li>  In the command prompt navigate to your prework-stude-guide directory
+            <br>Check whhich branch youre in with git status and make sure it is the main branch if you have to switch use git checkout main now git pull origin main
+            <br>Creat a new feature branch git checkout -b featured/add-js
+            <br>Now in the command prompt naviaget to your assets folder cd assets and creat a new assets folder called script.js by typing touch script.js
+            <br>In VS Code you can now open the script.js file
           <li> A variable is a named container that allows us to store data in our code</li>
+          <li> To declare a varible we use the var keyword after the var keyword we give it a unique name because this is how we reference information that is stored in the variable code
+          <li>Now to creat the JavaScript variable
+            <br> In VS Code type var topics = "HTML, CSS Git, Java Script"; this creates the variable topic and the topic contains a string that includes what we are studying in this module all strings are surrounded by quotation marks
+            <br> Next type console.log(topics); to add the console.log method to the file we can use this method to output a message to the web sonsole by adding an argument
+            <br> To learn more about the console.log <a href= "https://developer.mozilla.org/en-US/docs/Web/API/console/log_static"> CLICK HERE</a>
+            <br> Now to link the scipt.js to the index.html type < script src="./assets/script.js"> < / script > in the footer element and above the closing element for body </li>
+          <li>Use Devtools to view the console log output</li>
+          <li>While looking at you index.html file in the browser right click anywhere and select inspect from the dropwdown menu or use control+shift+I</li>
+          <li>In the chrome dev tools select the console tab tis allows us to see the value of our topics variable in the web console this is the console.log method in action</li>
+          <li>Now in VS Code enter the following into the header elements directly below the img element " < h2 >✨ Open the Console to See What's Happening ✨< / h2 ></li>
+          <li>Now save the file and refresh your browser to see the effects</li>
           <li>Control flow is the order in which a computer executes code in a script</li>
+          <li>the code is read top to bottom which</li>
+          <li>if you switch the location of the var and console.log in js you will get undefined in the chrome devtools</li>
+          <li>if statements are the type of conditional statements we will be using this type of statement code will only execute if the statement meets the certain condition think back to the fancy plate practice</li>
+          <li>The computer can have more than one condition if we use the else if as another condition this will cause the computer to work through every condition we list  determing which which conditions are truthy and thus executes those statements</li>
+          <li>Here is an example 
+            <br> var topic = "HTML" ;
+            <br>if (topic === 'HTML') {
+              <br>   console.log("Let's study HTML!");
+            <br>} else if (topic === 'CSS') {
+              <br>   console.log("Let's study CSS!");
+            <br>} else if (topic === 'Git') {
+             <br>    console.log("Let's study Git!");
+            <br>} else if (topic === 'JavaScript') {
+              <br>   console.log("Let's study JavaScript!");
+            <br>} else {
+              <br>   console.log('Please try again!');
+            <br>}
+          </li>
+          <li>The strict equality operator (===) checks to see if two values equal and returns a Boolean result wether(true or false) </li>
+          <li>If no conditions evaluate as truthy the console will read PLease Try again!</li>
+          <li>An array is a single variable used to hold a group of data that is typically related in some way</li>
+          <li>In the shape variable example we only used one item data the circle but you can list more by changing the code to var shapes = ["traingle", "square", "pentagon", "circle"];</li>
+          <li>to work with invidual items inside an array we need to have the location which is indentified with a unique number called the index</li>
+          <li>To create a for loop open VS Code and navigate tothe script.js file and enter to following code: 
+            <br> var topics = ['HTML', 'CSS', 'Git,' 'JavaScript'];
+            <br> for (var x = 0; x < topics.length; x++) {
+              <br>  console.log(topics[x]);
+             <br>}
+             
+             <br>/*
+             <br>if (topic === 'HTML') {
+              <br>  console.log("Let's study HTML!");
+             <br>} else if (topic === 'CSS') {
+              <br>  console.log("Let's study CSS!");
+             <br>} else if (topic === 'Git') {
+              <br>  console.log("Let's study Git!");
+             <br>} else if (topic === 'JavaScript') {
+              <br>  console.log("Let's study JavaScript!");
+             <br>} else {
+              <br>  console.log('Please try again!');
+             <br>}
+             <br>*/
+          </li>
+          <li>now complete the git flow like we have done previously by merging the branches and ensuring the main branch is up to date but dont close the branch yet</li>
+          <li>A function is simply a set of instructions that tells the computer how to perform a task</li>
+          <li>Now if necessary navigate to the feature branch in the command prompt</li>
+          <li>Now naviagte to script.js in VS Code</li>
+          <li>In the line above the for loop creat a new function name listtopics() by typing
+            <br> function listopics() then in {} curly brackets add the existing for loop we already have created
+          </li>
+          <li>Next wrap the exisiting if statement in a function named select topic you do this the same way but change listtopics to selecttopic and the if statement in curly</li>
+          <li>Now save the file</li>
+          <li>to call a function we use the name of the function in our JavaScript file where we want the code to execute let's add our lisTopics() at the bottom of our script.js file this will allow the list of topics to be logged in the console</li>
+          <li>Now add selectTopic() under listTopics() at the bottom of the page this will create a bug because we no longer have a variable called topic so go through and change all instances of topic to topics</li>
+          <li>to randomize our selection we use a special math function</li>
+            <br>to code will look like this
+            <br> var randomTopic = topics[Math.floor(Math.random() * topics.length)];
+            <br> var topics = ['HTML', 'CSS', 'Git', 'JavaScript'];
+            <br> Now change topics[0] to randomTopic
+          <li>fix the control flow by placing the randomTopic variable after we define the topics array</li>
+          <li>save the file</li>
+          <li>add a message to better explain the output console before we call listTopics() by writing the code console.log ( 'Here are the topics we learned through Prework:')</li>
+          <li>above selectTopics() write the code console.log ('Which topic should we study first?');</li>
+          <li>This is what the finale code will look like</li>
+          <li>var topics = ['HTML', 'CSS', 'Git', 'JavaScript'];
+            <br>var randomTopic = topics[Math.floor(Math.random() * topics.length)];
+            <br>
+            <br>function listTopics() {
+             <br> for (var x = 0; x < topics.length; x++) {
+               <br>  console.log(topics[x]);
+             <br> }
+            <br>}
+            <br>
+            <br>function selectTopic() {
+             <br> if (randomTopic === 'HTML') {
+               <br>  console.log("Let's study HTML!");
+             <br> } else if (randomTopic === 'CSS') {
+               <br>  console.log("Let's study CSS!");
+             <br> } else if (randomTopic === 'Git') {
+               <br>  console.log("Let's study Git!");
+             <br> } else if (randomTopic === 'JavaScript') {
+               <br>  console.log("Let's study JavaScript!");
+             <br> } else {
+               <br>  console.log('Please try again!');
+             <br> }
+            <br>}
+            <br>
+            <br>console.log('Here are the topics we learned through Prework:');
+            <br>listTopics();
+            <br>console.log('Which topic should we study first?');
+            <br>selectTopic();</li>
+          <li>Now complete the GitFlow like we have done previously but this time after merging branch we will close out the branch</li>
+          
         </ul>
       </section>
     </main>
